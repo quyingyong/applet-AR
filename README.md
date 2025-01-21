@@ -1,4 +1,4 @@
-# “共创AR” 微信小程序插件使用示例（HBuilder版）"
+# “共创AR” 微信小程序插件使用示例（HBuilder版）
 
 共创AR微信小程序插件是基于最新的 VisionKit 进行开发和封装的小程序AR解决方案，性能逼近原生，体验效果好，简单易用，渲染性能全网第二强（不让用最强）。
 
@@ -10,6 +10,6 @@
 
 **下载示例代码以后使用 HBuilder打开，然后将微信小程序appid修改为你自己的。**
 
-微信小程序插件文档地址：[https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx5024d89e4b208ce6&token=&lang=zh_CN](https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx5024d89e4b208ce6&token=&lang=zh_CN) 
+微信小程序插件文档地址：[https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx5024d89e4b208ce6&token=&lang=zh_CN](https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wx5024d89e4b208ce6&token=&lang=zh_CN){:target="_blank"}
 
 **注意：该插件需要获取摄像头权限，请登录你的小程序后台-隐私保护指引-填写摄像头权限使用说明。为了 “通过相机画面体验AR空间视觉效果”，...**
