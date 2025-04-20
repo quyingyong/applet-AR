@@ -51,7 +51,7 @@
     /* 小程序特有相关 */
     "mp-weixin" : {
 		// 将该appid修改为你自己的
-        "appid" : "wxda99aaef86082ecd",
+        "appid" : "",
         "setting" : {
             "urlCheck" : false, 
             "postcss" : true,
