@@ -46,7 +46,7 @@
 			// 跳转到 平面AR
 			gotoComponent() {
 				wx.navigateTo({
-				  url: "/pages/ar-viewer/index?sceneId=8a72d9627c3d4a378eab053216c4d973",
+				  url: "/pages/ar-viewer/index?sceneId=c374433e3e04412c80c3643f8851cb4d",
 				  success: function(res) {}
 				})
 			},
