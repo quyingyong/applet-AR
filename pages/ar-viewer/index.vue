@@ -5,6 +5,7 @@
 			@onObjectClick="handleObjectClick" 
 			@onTrackerState="handleTrackerState" 
 			@onARReady="handleARReady" 
+			@onSceneInfo="handleSceneInfo" 
 		>
 		</coar-scene-component>
 	</view>
@@ -15,7 +16,9 @@
 		data() {
 			return {
 				// 场景ID
-				sceneId: ""
+				sceneId: "",
+				// 场景数据
+				sceneInfo: {}
 			}
 		},
 		computed: {
@@ -35,6 +38,11 @@
 			},
 			handleARReady(e) {
 				console.log("AR初始化状态", e);
+			},
+			handleSceneInfo({ detail }) {
+				if(detail && detail.sceneName) {
+					this.sceneInfo = detail
+				}
 			}
 		}
 	}
