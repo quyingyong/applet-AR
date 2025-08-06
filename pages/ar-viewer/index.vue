@@ -39,6 +39,7 @@
 			handleARReady(e) {
 				console.log("AR初始化状态", e);
 			},
+			// 场景加载完成以后会回调场景数据，可用于分享或记录。
 			handleSceneInfo({ detail }) {
 				if(detail && detail.sceneName) {
 					this.sceneInfo = detail
