@@ -64,7 +64,7 @@
         "lazyCodeLoading" : "requiredComponents",
         "plugins" : {
             "coar" : {
-                "version" : "8.0.0",
+                "version" : "8.2.0",
                 "provider" : "wx5024d89e4b208ce6"
             }
         }
