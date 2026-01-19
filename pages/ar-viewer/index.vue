@@ -2,6 +2,8 @@
 	<view class="content">
 		<coar-scene-component 
 			:sceneId="sceneId"  
+			:showFeedback="true" 
+			:screenIndicate="screenIndicate" 
 			@onObjectClick="handleObjectClick" 
 			@onTrackerState="handleTrackerState" 
 			@onARReady="handleARReady" 
@@ -15,10 +17,14 @@
 	export default {
 		data() {
 			return {
-				// 场景ID
+				// 场景ID：在共创AR平台 “我的场景-场景设置” 中查看和复制对应的场景ID。
 				sceneId: "",
-				// 场景数据
-				sceneInfo: {}
+				// 当前ID对应的AR场景数据：组件初始化完成以后回调给使用者，可以用于分享信息设置等。
+				sceneInfo: {},
+				// 屏幕提示： showIndicate（Boolean）是否显示引导提示、showWatermark（Boolean）是否显示水印、
+				screenIndicate: {
+					showIndicate: true
+				}
 			}
 		},
 		computed: {
