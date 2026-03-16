@@ -6,7 +6,8 @@
 		<text class="text">
 			本插件对外提供了两种使用方式，一种是跳转到插件页面、一种是使用组件、以下按钮分别对应了不同的功能与介绍，点击即可体验：
 		</text>
-
+		
+		
 		<text class="text">
 			1、【跳转到插件页面】使用的是手势识别，识别到手势后会展示一个3D模型并跟随手掌移动。
 		</text>
@@ -44,6 +45,11 @@
 			<text class="link-image" @click="previewImage">点击查看识别图1</text>
 			<text class="link-image" @click="previewImage2">点击查看识别图2</text>
 		</view>
+		
+		<text class="text">
+			7、多图识别组件：支持参数配置、新增识别追踪到图片的回调事件、以及点击物体的回调事件。
+		</text>
+		<button @click="gotoCollectionCom" style="margin-top: 10px;">多图识别组件</button>
 
 
 		<text style="color: #000000; font-size: 15px; margin-top: 20px;">
@@ -111,6 +117,13 @@
 			gotoCollection() {
 				wx.navigateTo({
 					url: "plugin://coar/coar-collection?collectionId=11155",
+					success: function(res) {}
+				})
+			},
+			// 多图识别组件。
+			gotoCollectionCom() {
+				wx.navigateTo({
+					url: "/pages/ar-collection/index?collectionId=11155",
 					success: function(res) {}
 				})
 			},

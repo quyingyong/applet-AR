@@ -23,6 +23,24 @@
 				},
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path": "pages/ar-collection/index",
+			"name": "ar-collection",
+			"style": {
+				"navigationBarTitleText": "AR多图识别组件",
+				// 使用自定义导航=全屏AR
+				"navigationStyle": "custom",
+				// AR页面禁止滑动
+				"disableScroll": true,
+				// 引入插件
+				"mp-weixin": {
+					"usingComponents": {
+						"coar-collection-component": "plugin://coar/coar-collection-component" 
+					}
+				},
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {
