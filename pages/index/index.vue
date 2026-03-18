@@ -38,7 +38,7 @@
 		</view>
 
 		<text class="text">
-			6、【多图识别】打开摄像头，支持识别多张图片（最多3张），每张图所展示的内容不同。
+			6、【多图识别】打开摄像头，支持识别多张图片（最多1万张），每张图所展示的内容不同。
 		</text>
 		<button @click="gotoCollection" style="margin-top: 10px;">6、多图识别</button>
 		<view style="display: flex; align-items: center;height: 50px;">

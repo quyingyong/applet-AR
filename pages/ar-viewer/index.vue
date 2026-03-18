@@ -4,6 +4,7 @@
 			:sceneId="sceneId"  
 			:showFeedback="true" 
 			:screenIndicate="screenIndicate" 
+			:toolbar="toolbar"
 			@onObjectClick="handleObjectClick" 
 			@onTrackerState="handleTrackerState" 
 			@onARReady="handleARReady" 
@@ -24,6 +25,11 @@
 				// 屏幕提示： showIndicate（Boolean）是否显示引导提示、showWatermark（Boolean）是否显示水印、
 				screenIndicate: {
 					showIndicate: true
+				},
+				toolbar: {
+					showShare: false,
+					showScreenshot:false,
+					showAudio: false
 				}
 			}
 		},
