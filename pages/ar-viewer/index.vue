@@ -4,7 +4,8 @@
 			:sceneId="sceneId"  
 			:showFeedback="true" 
 			:screenIndicate="screenIndicate" 
-			:toolbar="toolbar"
+			:toolbar="toolbar" 
+			:setting="setting" 
 			@onObjectClick="handleObjectClick" 
 			@onTrackerState="handleTrackerState" 
 			@onARReady="handleARReady" 
@@ -30,6 +31,14 @@
 					showShare: false,
 					showScreenshot:false,
 					showAudio: false
+				},
+				// 20260701 加、支持传入自定义素材URL地址替换原素材进行展示、
+				setting: {
+					sceneObjectList: [
+						{ "objectName": "图片素材", "objectSrc": "素材地址", "sceneId": "场景ID" },
+						{ "objectName": "图片素材", "objectSrc": "素材地址", "sceneId": "场景ID" },
+						{ "objectName": "图片素材", "objectSrc": "素材地址", "sceneId": "场景ID" }
+					]
 				}
 			}
 		},

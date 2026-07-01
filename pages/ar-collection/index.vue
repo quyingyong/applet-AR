@@ -4,6 +4,7 @@
 			:collectionId="collectionId" 
 			:toolbar="toolbar" 
 			:showBack="showBack"
+			:setting="setting" 
 			@onARReady="handleARReady" 
 			@onTracker="handleTracker" 
 			@onObjectClick="handleObjectClick"  
@@ -20,7 +21,15 @@
 				// 合集ID
 				collectionId: "",
 				toolbar: {},
-				showBack: false
+				showBack: false,
+				// 20260701 加、支持传入自定义素材URL地址替换原素材进行展示、
+				setting: {
+					sceneObjectList: [
+						{ "objectName": "图片素材", "objectSrc": "素材地址", "sceneId": "场景ID" },
+						{ "objectName": "图片素材", "objectSrc": "素材地址", "sceneId": "场景ID" },
+						{ "objectName": "图片素材", "objectSrc": "素材地址", "sceneId": "场景ID" }
+					]
+				}
 			}
 		},
 		computed: {
