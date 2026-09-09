@@ -9,6 +9,7 @@
 			@onTracker="handleTracker" 
 			@onObjectClick="handleObjectClick"  
 			@onCollectionInfo="collectionInfoEvent" 
+			@onVideoPlayStatus="handleVideoPlayStatus" 
 			>
 		</coar-collection-component> 
 	</view>
@@ -52,6 +53,10 @@
 			},
 			collectionInfoEvent({ detail }) {
 				console.log("collectionInfoEvent", detail);
+			},
+			// 视频播放状态：
+			handleVideoPlayStatus({ detail }) {
+				console.log("视频播放状态", detail);
 			}
 		}
 	}

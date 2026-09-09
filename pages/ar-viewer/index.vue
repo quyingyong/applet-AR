@@ -10,6 +10,7 @@
 			@onTrackerState="handleTrackerState" 
 			@onARReady="handleARReady" 
 			@onSceneInfo="handleSceneInfo" 
+			@onVideoPlayStatus="handleVideoPlayStatus" 
 		>
 		</coar-scene-component>
 	</view>
@@ -65,6 +66,10 @@
 				if(detail && detail.sceneName) {
 					this.sceneInfo = detail
 				}
+			},
+			// 视频播放状态：
+			handleVideoPlayStatus({ detail }) {
+				console.log("视频播放状态", detail);
 			}
 		}
 	}
