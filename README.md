@@ -1,6 +1,6 @@
 # 微信小程序插件使用示例（HBuilder版）
 
-插件默认占用主包体积，插件支持使用分包的方式将插件放入分包，这样插件就不占用主包体积。详情看：[https://github.com/quyingyong/applet-AR-subpkg-example](https://github.com/quyingyong/applet-AR-subpkg-example) 
+插件默认占用主包体积，插件支持放入分包，这样插件就不占用主包体积。详情看：[https://github.com/quyingyong/applet-AR-subpkg-example](https://github.com/quyingyong/applet-AR-subpkg-example) 
 
 关键代码：
 
