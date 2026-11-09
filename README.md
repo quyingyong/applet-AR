@@ -1,5 +1,23 @@
 # 微信小程序插件使用示例（HBuilder版）
 
+插件默认占用主包体积，插件支持使用分包的方式将插件放入分包，这样插件就不占用主包体积。详情看：[https://github.com/quyingyong/applet-AR-subpkg-example](https://github.com/quyingyong/applet-AR-subpkg-example) 
+
+关键代码：
+
+```json
+"subPackages": [{
+	"root": "pkgPlugin",
+	"plugins" : {
+	  "coar" : {
+		  "version" : "11.5.0",
+		  "provider" : "wx5024d89e4b208ce6"
+	  }
+	},
+	"pages": []
+	// ...
+}]
+```
+
 > 共创AR微信小程序插件不收取任何费用，所有用户均可直接使用，无限制。
 
 使用中遇到任何问题，请加微信交流，同时欢迎您对服务提出宝贵意见。微信号coar88
